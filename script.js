@@ -63,7 +63,19 @@ const createScript = () => {
     })
 }
 
-console.log(createScript())
-console.log(createHTML())
-console.log(createStyles())
-console.log(deleteAll())
+const deleteScript = () => {
+    if (fs.existsSync('./script1.js')) {
+        fs.unlink('./script1.js', () => { });
+    }
+}
+
+// ну это понятно что это 1-я функция
+// createHTML()
+// // // да
+// createStyles()
+// да да
+// deleteAll()
+
+// createScript()
+
+deleteScript()
